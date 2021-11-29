@@ -11,20 +11,25 @@
 <html>
     <head>
         <title> {{title}} </title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h2>
-            {{title}}
-        </h2>
-        {{content}}
-        <br><br><br>
-        <i>Last updated by </i>{{lastuser}}
+        <div class = "border">
+            <div class = "center">
+                <h2>
+                    {{title}}
+                </h2>
+                {{content}}
+                <br><br><br>
+                <i>Last updated by </i>{{lastuser}}
+
+
+                <form action="/auth" method = 'POST'>
+                    <br>
+                    <button type = "submit" formaction="/"> Home </button>
+                </form>
+            </div>
+        </div>
     </body>
-
-    <form action="/auth" method = 'POST'>
-        <br>
-        <button type = "submit" formaction="/"> Home </button>
-    </form>
-
 </html>

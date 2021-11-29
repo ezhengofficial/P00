@@ -11,34 +11,35 @@
 
   <head>
     <title> LOGIN PAGE </title>
-    <style>
-      body {background-color: lightgreen;}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>
-      {{status}}
-    </h1>
-    <h2>
-      Cafe of Stories
-    </h2>
-    
-    <h4>
-      Enter your username and password below to proceed
-    </h4>
-    <h5>
-      (Username must begin with a letter)
-    </h5>
-    <form action="/auth" method = 'POST'>
-      Username: <input type="text" name="username">
-      <br>
-      Password:  <input type="password" name="password">
-      <br>
-      <button type = "submit" formaction="/auth"> Login </button>
-      <button type = "submit" formaction="/signup"> Signup </button>
-    </form>
-    <br>
+    <div class = "border">
+      <div class = "center">
+        <h1>
+          {{status}}
+        </h1>
+        <h2>
+          Cafe of Stories
+        </h2>     
+        <h4>
+          Enter your username and password below to proceed
+        </h4>
+        <h5>
+          (Username must begin with a letter)
+        </h5>
+        <form action="/auth" method = 'POST'>
+          <test>Username:</test>  <input type="text" name="username">
+          <br>
+          <test>Password:&nbsp</test>  <input type="password" name="password">
+          <br>
+          <button type = "submit" formaction="/auth"> Login </button>
+          <button type = "submit" formaction="/signup"> Signup </button>
+        </form>
+        <br>
+      </div>
+    </div>
   </body>
 
 </html>

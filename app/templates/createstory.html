@@ -11,26 +11,31 @@
 <html>
     <head>
         <title> Create New Story </title>
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <div class = "border">
+            <div class = "center">
+                <h2>
+                    {{status}}
+                </h2>
 
-    <h2>
-        {{status}}
-    </h2>
+                <h4>
+                    Enter the new story's title and content.
+                </h4>
 
-    <h4>
-        Enter the new story's title and content.
-    </h4>
-
-    <form action="/auth" method = 'POST'>
-        Title: <input type="text" name="title">
-        <br>
-        Content: <br>
-        <textarea id="content" name="content" rows="4" cols="50">{{story}}</textarea>
-        <!--<input type="text" name="content" size="100"> -->
-        <br>
-        <button type = "submit" formaction="/uploadNewStory"> Add new story </button>
-        <br>
-        <button type = "submit" formaction="/"> Home </button>
-      </form>
-
+                <form action="/auth" method = 'POST'>
+                    Title: <input type="text" name="title">
+                    <br>
+                    Content: <br>
+                    <textarea id="content" name="content" rows="4" cols="50">{{story}}</textarea>
+                    <!--<input type="text" name="content" size="100"> -->
+                    <br>
+                    <button type = "submit" formaction="/uploadNewStory"> Add new story </button>
+                    <br>
+                    <button type = "submit" formaction="/"> Home </button>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

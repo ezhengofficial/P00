@@ -11,30 +11,36 @@
 <html>
     <head>
         <title> Add to Existing Story </title>
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <div class = "border">
+            <div class = "center">
+                <h4>
+                    Enter the existing story's title you want to add to. You may not add to a story you have already contributed to.
+                </h4>
 
-    <h4>
-        Enter the existing story's title you want to add to. You may not add to a story you have already contributed to.
-    </h4>
+                <form action="/addToTitle" method = 'POST'>
+                    Title: <input type="text" name="title">
+                    <br>
+                    <button type = "submit"> Submit </button>
+                </form>
+                
+                <h5>
+                    List of Stories:
+                </h5>
 
-    <form action="/addToTitle" method = 'POST'>
-        Title: <input type="text" name="title">
-        <br>
-        <button type = "submit"> Submit </button>
-      </form>
-    
-    <h5>
-        List of Stories:
-    </h5>
+                {% for value in stories %}
+                    {{value[0]}}
+                    <br>
+                {% endfor %}
 
-    {% for value in stories %}
-        {{value[0]}}
-        <br>
-    {% endfor %}
-
-    <form action="/auth" method = 'POST'>
-        <br>
-        <button type = "submit" formaction="/"> Home </button>
-      </form>
+                <form action="/auth" method = 'POST'>
+                    <br>
+                    <button type = "submit" formaction="/"> Home </button>
+                </form>
+            </div>
+        </div>
+    </body>
 
 </html>
