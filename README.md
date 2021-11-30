@@ -7,6 +7,8 @@ Josephine Lee: Project Manager; HTML templates, front end
 Han Zhang: Python backend  
 Annabel Zhang: Python backend  
 Hebe Huang: Database generation  
+Edwin Zheng: Editor (css)
+Tina Nguyen: Editor (css)
 
 
 ## How to install and run our website:
